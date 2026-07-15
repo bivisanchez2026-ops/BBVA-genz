@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BBVA — Tu dinero, a tu manera</title>
+<meta name="description" content="No somos el banco que heredaste. Somos el que elegirías.">
+<link rel="icon" type="image/png" href="assets/logos/bbva-logo-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scrollProgressBar"></div></div>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader" data-reveal-root>
+  <div class="container header__inner">
+    <a href="#main" class="logo-link" aria-label="BBVA — inicio">
+      <img src="assets/logos/bbva-logo-navy.png" alt="BBVA" class="logo logo--dark">
+      <img src="assets/logos/bbva-logo-cream.png" alt="BBVA" class="logo logo--light">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <ul class="main-nav__list">
+        <li class="has-dropdown">
+          <button class="main-nav__link" aria-expanded="false">Productos</button>
+          <div class="dropdown">
+            <a href="#productos">Cuentas</a>
+            <a href="#productos">Tarjetas</a>
+            <a href="#productos">Ahorro</a>
+            <a href="#productos">Inversión</a>
+            <a href="#productos">Para jóvenes</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="#ventajas">Ventajas</a></li>
+        <li><a class="main-nav__link" href="#comunidad">Comunidad</a></li>
+        <li><a class="main-nav__link" href="#ayuda">Ayuda</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="lang-select" aria-label="Seleccionar idioma">ES <span aria-hidden="true">▾</span></button>
+      <a href="#" class="btn btn--ghost btn--sm">Acceso clientes</a>
+      <a href="#abrir-cuenta" class="btn btn--lime btn--sm">Abrir cuenta</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#productos">Cuentas</a></li>
+      <li><a href="#productos">Tarjetas</a></li>
+      <li><a href="#productos">Ahorro</a></li>
+      <li><a href="#productos">Inversión</a></li>
+      <li><a href="#productos">Para jóvenes</a></li>
+      <li><a href="#ventajas">Ventajas</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#ayuda">Ayuda</a></li>
+    </ul>
+    <div class="mobile-menu__actions">
+      <a href="#" class="btn btn--ghost-light">Acceso clientes</a>
+      <a href="#abrir-cuenta" class="btn btn--lime">Abrir cuenta</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow reveal" data-reveal>BBVA · Nueva era</p>
+      <h1 class="hero__title reveal" data-reveal>
+        No somos el banco<br>que heredaste.<br>
+        <span>Somos el que elegirías.</span>
+      </h1>
+      <p class="hero__subtitle reveal" data-reveal data-reveal-delay="1">
+        Un banco que se mueve como tú. Directo, claro y sin letra pequeña sorpresa.
+      </p>
+      <div class="hero__actions reveal" data-reveal data-reveal-delay="2">
+        <a href="#abrir-cuenta" class="btn btn--lime btn--lg">Empieza ahora</a>
+        <a href="#app" class="btn btn--outline-dark btn--lg">Conoce la app <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span></span>
+      <p>Desplázate</p>
+    </div>
+  </section>
+
+  <!-- ============ VALUE PROPS ============ -->
+  <section class="values" id="ventajas">
+    <div class="container">
+      <h2 class="section-title reveal" data-reveal>Tu dinero, a tu manera</h2>
+      <div class="values__grid">
+        <article class="value-card reveal" data-reveal data-reveal-delay="0">
+          <span class="value-card__num">01</span>
+          <h3>Autenticidad</h3>
+          <p>Sin discursos vacíos. Te mostramos lo que hacemos con hechos, no con promesas.</p>
+        </article>
+        <article class="value-card reveal" data-reveal data-reveal-delay="1">
+          <span class="value-card__num">02</span>
+          <h3>Pertenencia</h3>
+          <p>Tu banco se adapta a ti: personaliza tu cuenta, tus metas y tu forma de ahorrar.</p>
+        </article>
+        <article class="value-card reveal" data-reveal data-reveal-delay="2">
+          <span class="value-card__num">03</span>
+          <h3>Conexión</h3>
+          <p>Comparte gastos, objetivos y beneficios con tu gente, en tiempo real.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS (overlapping cards) ============ -->
+  <section class="products" id="productos">
+    <div class="container">
+      <h2 class="section-title reveal" data-reveal>Elige. Combina. Es tuyo.</h2>
+      <p class="section-lead reveal" data-reveal>Cuentas, tarjetas, ahorro e inversión pensados para moverse contigo.</p>
+    </div>
+    <div class="products__stack" id="productsStack">
+      <article class="product-card product-card--navy" data-stack-index="0">
+        <div class="product-card__body">
+          <span class="product-card__tag">Cuentas</span>
+          <h3>Cuenta sin comisiones,<br>de verdad</h3>
+          <p>Abre tu cuenta en minutos. Sin sorpresas, sin condiciones ocultas.</p>
+          <a href="#" class="btn btn--outline-light btn--sm">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="product-card product-card--lime" data-stack-index="1">
+        <div class="product-card__body">
+          <span class="product-card__tag">Tarjetas</span>
+          <h3>Tarjetas que se<br>adaptan a ti</h3>
+          <p>Física, virtual, o las dos. Bloquea, límite y controla desde la app.</p>
+          <a href="#" class="btn btn--outline-dark btn--sm">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="product-card product-card--cream" data-stack-index="2">
+        <div class="product-card__body">
+          <span class="product-card__tag">Ahorro</span>
+          <h3>Ahorra sin<br>pensarlo</h3>
+          <p>Metas automáticas, redondeo de compras y hueveras de ahorro visuales.</p>
+          <a href="#" class="btn btn--outline-dark btn--sm">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="product-card product-card--blue" data-stack-index="3">
+        <div class="product-card__body">
+          <span class="product-card__tag">Inversión</span>
+          <h3>Invierte desde<br>un euro</h3>
+          <p>Fondos indexados y carteras simples, explicadas sin tecnicismos.</p>
+          <a href="#" class="btn btn--outline-light btn--sm">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="product-card product-card--navy" data-stack-index="4">
+        <div class="product-card__body">
+          <span class="product-card__tag">Para jóvenes</span>
+          <h3>Tu primera cuenta,<br>bien hecha</h3>
+          <p>Pensada para estudiantes: sin mínimos, sin líos, con ventajas reales.</p>
+          <a href="#" class="btn btn--outline-light btn--sm">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ STICKY FEATURE SHOWCASE ============ -->
+  <section class="feature-pin" id="featurePin">
+    <div class="feature-pin__sticky">
+      <div class="container feature-pin__inner">
+        <div class="feature-pin__copy">
+          <p class="eyebrow">Funcionalidades diferenciales</p>
+          <div class="feature-pin__item" data-feature="0">
+            <h3>Divide gastos<br>al instante</h3>
+            <p>Separa la cuenta con tus amigos en segundos, sin cálculos ni excusas.</p>
+          </div>
+          <div class="feature-pin__item" data-feature="1">
+            <h3>Puntos BBVA<br>que se acumulan</h3>
+            <p>Cada movimiento suma. Canjea tus puntos por lo que realmente quieres.</p>
+          </div>
+          <div class="feature-pin__item" data-feature="2">
+            <h3>Beneficios<br>en grupo</h3>
+            <p>Invita a tu gente y desbloquead ventajas juntos. Más equipo, más recompensa.</p>
+          </div>
+          <div class="feature-pin__item" data-feature="3">
+            <h3>Tu asistente<br>financiero</h3>
+            <p>Un asistente con IA que te explica tus finanzas en tu idioma, sin tecnicismos.</p>
+          </div>
+        </div>
+        <div class="feature-pin__visual">
+          <div class="feature-pin__progress" aria-hidden="true">
+            <span data-dot="0"></span><span data-dot="1"></span><span data-dot="2"></span><span data-dot="3"></span>
+          </div>
+          <div class="phone-mock">
+            <div class="phone-mock__screen" data-screen="0">
+              <div class="mock-row"><span>Cena con Marta</span><b>-24,50 €</b></div>
+              <div class="mock-split">
+                <div class="mock-avatar">T</div><div class="mock-avatar">M</div><div class="mock-avatar">+2</div>
+              </div>
+              <p class="mock-caption">Dividido en 4 partes iguales</p>
+            </div>
+            <div class="phone-mock__screen" data-screen="1">
+              <div class="mock-points">1.248 pts</div>
+              <p class="mock-caption">Te faltan 250 pts para tu recompensa</p>
+              <div class="mock-bar"><span style="width:78%"></span></div>
+            </div>
+            <div class="phone-mock__screen" data-screen="2">
+              <div class="mock-row"><span>Grupo "Piso 3B"</span><b>+15 €</b></div>
+              <p class="mock-caption">3 amigos invitados este mes</p>
+            </div>
+            <div class="phone-mock__screen" data-screen="3">
+              <div class="mock-chat">
+                <p class="chat chat--bot">¿En qué te ayudo hoy?</p>
+                <p class="chat chat--user">¿Cuánto he ahorrado este mes?</p>
+                <p class="chat chat--bot">82 € más que en junio 🌱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- scroll-length spacers, one per feature -->
+    <div class="feature-pin__spacer" data-spacer="0"></div>
+    <div class="feature-pin__spacer" data-spacer="1"></div>
+    <div class="feature-pin__spacer" data-spacer="2"></div>
+    <div class="feature-pin__spacer" data-spacer="3"></div>
+  </section>
+
+  <!-- ============ APP MOBILE ============ -->
+  <section class="app-section" id="app">
+    <div class="container app-section__inner">
+      <div class="app-section__copy">
+        <p class="eyebrow reveal" data-reveal>La app</p>
+        <h2 class="reveal" data-reveal>Todo tu dinero,<br><span>en tu bolsillo</span></h2>
+        <p class="reveal" data-reveal data-reveal-delay="1">
+          Controla tarjetas, ahorra en comunidad y gestiona tus objetivos sin salir de la app.
+        </p>
+        <div class="app-rating reveal" data-reveal data-reveal-delay="2">
+          <strong>4.8 ★</strong> <span>+120.000 valoraciones</span>
+        </div>
+        <div class="qr-block reveal" data-reveal data-reveal-delay="3">
+          <div class="qr-block__code" aria-hidden="true"></div>
+          <p>Escanea para descargar<br>la app de BBVA</p>
+        </div>
+      </div>
+      <div class="app-section__carousel">
+        <div class="app-carousel" id="appCarousel">
+          <div class="app-carousel__track" id="appCarouselTrack">
+            <div class="app-screen app-screen--1"><span>Inicio</span></div>
+            <div class="app-screen app-screen--2"><span>Tarjetas</span></div>
+            <div class="app-screen app-screen--3"><span>Ahorro</span></div>
+            <div class="app-screen app-screen--4"><span>Comunidad</span></div>
+          </div>
+        </div>
+        <div class="app-carousel__dots" id="appCarouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMUNITY (color shift navy -> lime/cream) ============ -->
+  <section class="community" id="comunidad">
+    <div class="container community__inner">
+      <p class="eyebrow reveal" data-reveal>Comunidad</p>
+      <h2 class="reveal" data-reveal>Gestiona dinero<br>en compañía</h2>
+      <div class="community__grid">
+        <article class="benefit-card reveal" data-reveal data-reveal-delay="0">
+          <h3>Objetivos compartidos</h3>
+          <p>Ahorra en grupo para un viaje, una casa o lo que sea que estéis planeando.</p>
+        </article>
+        <article class="benefit-card reveal" data-reveal data-reveal-delay="1">
+          <h3>Gastos comunes</h3>
+          <p>Reparte alquiler, suministros y facturas sin hojas de cálculo.</p>
+        </article>
+        <article class="benefit-card reveal" data-reveal data-reveal-delay="2">
+          <h3>Recompensas de grupo</h3>
+          <p>Cuanta más gente conectada, más beneficios para todos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY ============ -->
+  <section class="security" id="seguridad">
+    <div class="container security__inner">
+      <div class="security__copy">
+        <p class="eyebrow reveal" data-reveal>Seguridad</p>
+        <h2 class="reveal" data-reveal>Tu dinero,<br>siempre protegido</h2>
+        <p class="reveal" data-reveal data-reveal-delay="1">Control total sobre tus tarjetas y alertas en tiempo real ante cualquier movimiento.</p>
+      </div>
+      <div class="security__grid">
+        <div class="security-item reveal" data-reveal data-reveal-delay="0">
+          <div class="security-item__icon" aria-hidden="true">🔒</div>
+          <h3>Bloqueo instantáneo</h3>
+          <p>Bloquea y desbloquea tu tarjeta desde la app en un toque.</p>
+        </div>
+        <div class="security-item reveal" data-reveal data-reveal-delay="1">
+          <div class="security-item__icon" aria-hidden="true">🛡️</div>
+          <h3>Alertas en tiempo real</h3>
+          <p>Notificación inmediata de cada movimiento, sin esperas.</p>
+        </div>
+        <div class="security-item reveal" data-reveal data-reveal-delay="2">
+          <div class="security-item__icon" aria-hidden="true">🕵️</div>
+          <h3>Prevención de fraude</h3>
+          <p>Detectamos patrones raros antes de que se conviertan en un problema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATIONAL CONTENT ============ -->
+  <section class="editorial" id="aprende">
+    <div class="container">
+      <h2 class="section-title reveal" data-reveal>Aprende a manejar tu dinero</h2>
+      <div class="editorial__grid">
+        <article class="article-card reveal" data-reveal data-reveal-delay="0">
+          <span class="article-card__tag">Ahorro</span>
+          <h3>5 formas simples de ahorrar sin darte cuenta</h3>
+          <p>Trucos reales para que tu dinero rinda más cada mes.</p>
+        </article>
+        <article class="article-card reveal" data-reveal data-reveal-delay="1">
+          <span class="article-card__tag">Inversión</span>
+          <h3>Invertir por primera vez: guía sin tecnicismos</h3>
+          <p>Todo lo que necesitas saber antes de dar el primer paso.</p>
+        </article>
+        <article class="article-card reveal" data-reveal data-reveal-delay="2">
+          <span class="article-card__tag">Finanzas</span>
+          <h3>Cómo hacer un presupuesto que sí cumplas</h3>
+          <p>Un método simple para dejar de llegar justo a fin de mes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="ayuda">
+    <div class="container faq__inner">
+      <h2 class="section-title reveal" data-reveal>Preguntas frecuentes</h2>
+      <div class="accordion" id="accordion">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>¿Cuánto cuesta abrir una cuenta?</span><span class="accordion__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion__panel"><p>Nada. Abrir tu cuenta es gratis y no tiene comisión de mantenimiento.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>¿Qué documentación necesito?</span><span class="accordion__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion__panel"><p>Solo tu DNI o pasaporte y unos minutos desde el móvil.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>¿Es segura la app?</span><span class="accordion__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion__panel"><p>Sí. Usamos autenticación biométrica y alertas en tiempo real ante cualquier movimiento.</p></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>¿Cómo funciona el reparto de gastos?</span><span class="accordion__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion__panel"><p>Creas un grupo, añades el gasto y la app calcula y reclama la parte de cada uno automáticamente.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" id="abrir-cuenta">
+    <div class="container final-cta__inner">
+      <h2 class="reveal" data-reveal>Cambiamos para ti.</h2>
+      <p class="reveal" data-reveal data-reveal-delay="1">Abre tu cuenta hoy y descubre un banco que se mueve a tu ritmo.</p>
+      <a href="#" class="btn btn--lime btn--lg reveal" data-reveal data-reveal-delay="2">Empieza ahora</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <img src="assets/logos/bbva-logo-navy.png" alt="BBVA" class="footer-logo">
+      <div class="site-footer__cols">
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <a href="#productos">Cuentas</a>
+          <a href="#productos">Tarjetas</a>
+          <a href="#productos">Ahorro</a>
+          <a href="#productos">Inversión</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ayuda</h4>
+          <a href="#ayuda">Preguntas frecuentes</a>
+          <a href="#seguridad">Seguridad</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>BBVA</h4>
+          <a href="#">Sobre nosotros</a>
+          <a href="#">Empleo</a>
+          <a href="#">Sostenibilidad</a>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© 2026 BBVA. Todo claro, sin letra pequeña sorpresa.</p>
+      <div class="footer-legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
