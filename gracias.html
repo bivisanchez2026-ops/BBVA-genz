@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BBVA — Descarga la app</title>
+<meta name="description" content="Descarga la app de BBVA y empieza en tres pasos.">
+<link rel="icon" type="image/png" href="assets/logos/bbva-logo-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo-link" aria-label="BBVA — inicio">
+      <img src="assets/logos/bbva-logo-navy.png" alt="BBVA" class="logo logo--dark">
+    </a>
+    <a href="index.html" class="btn btn--ghost btn--sm">Volver al inicio</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="gracias">
+    <div class="container gracias__inner">
+      <p class="eyebrow">Casi listo</p>
+      <h1 class="gracias__title">Revisa tu correo.</h1>
+      <p class="gracias__lead" data-email-lead>
+        Te hemos enviado el enlace a tu correo. Mientras tanto, descarga la app.
+      </p>
+
+      <div class="gracias__download gracias__download--desktop">
+        <div class="qr-block__code gracias__qr" aria-hidden="true"></div>
+        <div>
+          <p class="gracias__download-title">Descarga la app</p>
+          <p class="gracias__download-caption">Escanea el código QR con la cámara de tu móvil.</p>
+        </div>
+      </div>
+
+      <div class="gracias__download gracias__download--mobile">
+        <p class="gracias__download-title">Descarga la app aquí</p>
+        <div class="gracias__store-links">
+          <a href="https://apps.apple.com/app/bbva/id0000000000" class="btn btn--outline-light" target="_blank" rel="noopener">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.bbva.appdemo" class="btn btn--outline-light" target="_blank" rel="noopener">Google Play</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer site-footer--minimal">
+  <div class="container site-footer__bottom">
+    <p>© 2026 BBVA. Todo claro, sin letra pequeña sorpresa.</p>
+    <div class="footer-legal">
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const email = params.get('email');
+  if (email) {
+    document.querySelector('[data-email-lead]').innerHTML =
+      `Te hemos enviado el enlace a <strong>${email.replace(/</g, '&lt;')}</strong>. Mientras tanto, descarga la app.`;
+  }
+</script>
+</body>
+</html>
