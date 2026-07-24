@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abrir cuenta — BBVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/wizard.css">
+</head>
+<body class="wizard-body">
+
+<div class="wizard-top">
+  <a href="index.html" class="logo">BBVA</a>
+  <a href="#" class="wizard-back" id="wizardBack">← Atrás</a>
+  <div class="wizard-progress">
+    <div class="wizard-track"><div class="wizard-fill" id="wizardFill"></div></div>
+    <div class="wizard-label" id="wizardLabel">Paso 1 de 6</div>
+  </div>
+</div>
+
+<div class="wizard-stage">
+
+  <!-- STEP 1 : tarjeta -->
+  <section class="wizard-step active" data-step="1">
+    <h2>¿Qué tarjeta quieres?</h2>
+    <p class="sub">Puedes cambiarla más adelante desde la app.</p>
+    <div class="card-tiles">
+      <div class="card-tile" data-card="debito">
+        <div class="swatch" style="background:#fff;border:1px solid var(--border);"><span class="name" style="color:var(--navy);">débito</span></div>
+        <div class="title">Débito</div>
+        <div class="desc">0€ emisión y mantenimiento</div>
+        <div class="check">✓ Seleccionada</div>
+      </div>
+      <div class="card-tile" data-card="aquamas">
+        <div class="swatch" style="background:linear-gradient(110deg,#4f6eff 4%,#2b40c7 95%);"><span class="name" style="color:#fff;">aqua más</span></div>
+        <div class="tag">Recomendada</div>
+        <div class="title">Aqua Más</div>
+        <div class="desc">Crédito flexible</div>
+        <div class="check">✓ Seleccionada</div>
+      </div>
+      <div class="card-tile" data-card="maxima">
+        <div class="swatch" style="background:#12171f;"><span class="name" style="color:#fff;">máxima</span></div>
+        <div class="title">Máxima</div>
+        <div class="desc">Cashback y viajes</div>
+        <div class="check">✓ Seleccionada</div>
+      </div>
+      <div class="card-tile" data-card="vuelo">
+        <div class="swatch" style="background:var(--lime);"><span class="name" style="color:var(--navy);">vuelo</span></div>
+        <div class="tag">Para 18–29</div>
+        <div class="title">Vuelo</div>
+        <div class="desc">La favorita de Bivi</div>
+        <div class="check">✓ Seleccionada</div>
+      </div>
+    </div>
+    <div class="wizard-actions">
+      <button class="btn btn-primary btn-lg btn-block btn-disabled" id="step1Continue">Continuar</button>
+    </div>
+  </section>
+
+  <!-- STEP 2 : datos -->
+  <section class="wizard-step" data-step="2">
+    <div class="wizard-card">
+      <h2 style="font-size:28px;text-align:left;">Cuéntanos quién eres</h2>
+      <p class="sub" style="text-align:left;">Solo lo básico para crear tu cuenta.</p>
+      <form id="formDatos" style="margin-top:28px;">
+        <div class="field">
+          <label>Nombre completo</label>
+          <input type="text" placeholder="Ej. Marta Gómez" required>
+        </div>
+        <div class="field" id="birthdateField">
+          <label>Fecha de nacimiento</label>
+          <input type="date" id="birthdate" required>
+          <p class="hint" id="birthdateHint" style="display:none;"></p>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="field">
+          <label>Teléfono</label>
+          <input type="tel" placeholder="+34" required>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">Acepto los Términos y Condiciones y he leído la Política de Privacidad de BBVA.</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" id="marketing">
+          <label for="marketing">Quiero recibir ofertas y novedades de BBVA (opcional).</label>
+        </div>
+        <p class="hint">Cuenta protegida por el Fondo de Garantía de Depósitos hasta 100.000 €. Puedes desistir sin coste en los primeros 14 días. Debes ser mayor de edad.</p>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top:20px;">Continuar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STEP 3 : contraseña -->
+  <section class="wizard-step" data-step="3">
+    <div class="wizard-card">
+      <h2 style="font-size:28px;text-align:left;">Crea tu contraseña</h2>
+      <p class="sub" style="text-align:left;">La usarás para entrar a la app.</p>
+      <form id="formPass" style="margin-top:28px;">
+        <div class="field" id="pwField">
+          <label>Contraseña</label>
+          <input type="password" id="pw1" placeholder="Mínimo 8 caracteres" minlength="8" required>
+        </div>
+        <div class="field" id="pw2Field">
+          <label>Repite tu contraseña</label>
+          <input type="password" id="pw2" placeholder="Vuelve a escribirla" required>
+          <p class="hint" id="pwHint">Usa mayúsculas, minúsculas y números para más seguridad.</p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Continuar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STEP 4 : DNI -->
+  <section class="wizard-step" data-step="4">
+    <h2>Foto de tu DNI</h2>
+    <p class="sub">Encuadra el anverso dentro del marco. Sin reflejos.</p>
+    <div class="camera-screen">
+      <div class="camera-flash" id="flashDni"></div>
+      <div class="camera-frame"><div class="fake-doc"></div></div>
+      <button class="shutter" id="shutterDni" aria-label="Capturar"></button>
+      <div class="capture-check" id="checkDni"><div class="tick">✓</div><p>DNI capturado correctamente</p></div>
+    </div>
+    <div class="wizard-actions">
+      <button class="btn btn-primary btn-lg btn-block btn-disabled" id="step4Continue">Continuar</button>
+    </div>
+  </section>
+
+  <!-- STEP 5 : selfie -->
+  <section class="wizard-step" data-step="5">
+    <h2>Ahora, una selfie</h2>
+    <p class="sub">Gira la cabeza lentamente y parpadea cuando te lo pidamos.</p>
+    <div class="camera-screen">
+      <div class="camera-flash" id="flashSelfie"></div>
+      <div class="camera-frame round"></div>
+      <p class="camera-hint">Centra tu rostro en el círculo</p>
+      <button class="shutter" id="shutterSelfie" aria-label="Capturar"></button>
+      <div class="capture-check" id="checkSelfie"><div class="tick">✓</div><p>Selfie capturada correctamente</p></div>
+    </div>
+    <div class="wizard-actions">
+      <button class="btn btn-primary btn-lg btn-block btn-disabled" id="step5Continue">Continuar</button>
+    </div>
+  </section>
+
+  <!-- STEP 6 : verificando -->
+  <section class="wizard-step" data-step="6">
+    <div class="verify-wrap">
+      <div class="verify-ring">
+        <div class="verify-avatar"><div data-bivi data-bivi-size="100"></div></div>
+      </div>
+      <h2 style="margin-top:36px;font-size:26px;">Verificando tu identidad...</h2>
+      <p class="sub">Esto tarda unos segundos. No cierres esta ventana.</p>
+    </div>
+  </section>
+
+  <!-- STEP 7 : confirmación -->
+  <section class="wizard-step" data-step="7">
+    <div class="wizard-card center" style="text-align:center;">
+      <div class="confirm-avatar"><div data-bivi data-bivi-size="100" class="bivi-float"></div></div>
+      <h2 style="font-size:28px;margin-top:24px;">¡Ya eres BBVA!</h2>
+      <p class="sub">Tu cuenta ya está activa. Pide tu tarjeta física cuando quieras, o empieza a usar la virtual ahora mismo.</p>
+      <div class="wizard-actions">
+        <a href="descargar-app.html" class="btn btn-primary btn-lg btn-block">Descargar la app</a>
+        <a href="planes.html" class="btn btn-outline btn-lg btn-block">Ver mis planes de tarjeta</a>
+        <a href="index.html" class="link-underline center" style="margin-top:6px;">Ir a mi cuenta</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/bivi.js"></script>
+<script src="js/wizard.js"></script>
+</body>
+</html>
