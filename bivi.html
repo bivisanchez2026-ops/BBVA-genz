@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conoce a Bivi — BBVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .chip-q{ background:#fff; border:1px solid var(--border-warm); border-radius:100px; padding:14px 22px; font-weight:500; font-size:15px; color:var(--navy); transition:all .2s ease; }
+  .chip-q:hover{ background:var(--navy); color:#fff; transform:translateY(-2px); }
+  .topic-cat + .topic-cat{ margin-top:28px; }
+  .topic-cat h5{ font-weight:600; font-size:13px; letter-spacing:.04em; color:var(--body); text-transform:uppercase; margin-bottom:12px; }
+  .chips-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .reel{ width:220px; height:320px; border-radius:20px; position:relative; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; overflow:hidden; cursor:pointer; transition:transform .3s ease; }
+  .reel:hover{ transform:translateY(-6px); }
+  .reel .play{ width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:20px;backdrop-filter:blur(4px); }
+  .reel .label{ position:absolute; bottom:20px; left:16px; right:16px; font-weight:600; font-size:15px; }
+  .reel .badge{ position:absolute; top:16px; left:16px; background:var(--lime); color:#3a4d0e; font-size:12px; font-weight:600; padding:4px 12px; border-radius:100px; }
+  .reels-scroll{ display:flex; gap:16px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x proximity; }
+  .reel{ scroll-snap-align:start; }
+  .term-card{ background:#fff; border-radius:16px; padding:20px; width:270px; flex-shrink:0; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">BBVA</a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="planes.html">Planes</a>
+      <a href="bivi.html">Conoce a Bivi</a>
+    </div>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost">Acceso clientes</a>
+      <a href="abrir-cuenta.html" class="btn btn-primary">Abrir cuenta</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO CHAT -->
+<header class="section-cream" style="padding:56px 0;">
+  <div class="wrap center">
+    <div class="card-white" style="border-radius:24px; display:inline-flex; align-items:center; gap:16px; padding:28px 40px; text-align:left; max-width:760px;">
+      <div style="background:var(--lime); border-radius:50%; width:220px; height:220px; display:flex; align-items:center; justify-content:center; flex-shrink:0;" data-bivi-drift>
+        <div data-bivi data-bivi-size="170" class="bivi-float"></div>
+      </div>
+      <div>
+        <span class="pill-tag" style="background:var(--lime);border:none;color:#094a21;">● En línea</span>
+        <h1 style="font-weight:600;font-size:34px;margin-top:12px;">Hola, soy Bivi.</h1>
+        <p class="lead" style="margin-top:6px;">Pregúntame lo que quieras sobre tu dinero.</p>
+      </div>
+    </div>
+    <div style="max-width:600px;margin:28px auto 0;">
+      <div class="card-white" style="border-radius:100px;border:1px solid var(--border-warm);padding:16px 28px;display:flex;align-items:center;gap:12px;" id="openBiviFromHero">
+        <span class="muted">Escribe tu pregunta…</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO PARA TI -->
+<section class="section-tight">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:30px;">Contenido para ti</h2>
+    <div class="reels-scroll" style="margin-top:24px;" data-stagger>
+      <div class="reel" style="background:#111214;"><span class="badge">Nuevo</span><div class="play">▶</div><div class="label">Ahorro automático en 1 min</div></div>
+      <div class="reel" style="background:#29488b;"><div class="play">▶</div><div class="label">Débito vs crédito</div></div>
+      <div class="reel" style="background:#4a231b;"><div class="play">▶</div><div class="label">Salir de números rojos</div></div>
+      <div class="reel" style="background:#17284d;"><div class="play">▶</div><div class="label">Tu primera nómina</div></div>
+      <div class="reel" style="background:#29488b;"><div class="play">▶</div><div class="label">Invertir con poco dinero</div></div>
+      <div class="reel" style="background:#29488b;"><div class="play">▶</div><div class="label">Presupuesto que sí dura el mes</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS SUGERIDAS -->
+<section class="section">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:28px;">Preguntas sugeridas</h2>
+    <div style="margin-top:28px;" data-stagger>
+      <div class="topic-cat">
+        <h5>Ahorro</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo ahorro sin darme cuenta?">¿Cómo ahorro sin darme cuenta?</button>
+          <button class="chip-q" data-q="¿Cuánto debería ahorrar al mes?">¿Cuánto debería ahorrar al mes?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Tarjetas</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Débito o crédito, cuál uso?">¿Débito o crédito, cuál uso?</button>
+          <button class="chip-q" data-q="¿Qué es el CVV dinámico?">¿Qué es el CVV dinámico?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Deudas</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="Me pasé con la tarjeta, ¿qué hago?">Me pasé con la tarjeta, ¿qué hago?</button>
+          <button class="chip-q" data-q="¿Qué es el TAE?">¿Qué es el TAE?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Primer sueldo</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="Cobré mi primera nómina, ¿y ahora?">Cobré mi primera nómina, ¿y ahora?</button>
+          <button class="chip-q" data-q="¿Necesito un fondo de emergencia?">¿Necesito un fondo de emergencia?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Inversión</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo empiezo a invertir con poco dinero?">¿Cómo empiezo a invertir con poco dinero?</button>
+          <button class="chip-q" data-q="¿Es arriesgado invertir siendo joven?">¿Es arriesgado invertir siendo joven?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Presupuesto</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo hago un presupuesto que sí cumpla?">¿Cómo hago un presupuesto que sí cumpla?</button>
+          <button class="chip-q" data-q="¿En qué se me va el dinero cada mes?">¿En qué se me va el dinero cada mes?</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;margin-top:36px;align-items:flex-start;" class="reveal">
+      <div data-bivi data-bivi-size="40"></div>
+      <div class="card" style="border-top-left-radius:4px;max-width:600px;">
+        Prueba el redondeo automático: cada compra se redondea y la diferencia pasa sola a tu ahorro. No lo notas y al mes tienes un colchón.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIP -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="card card-lime reveal-scale" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+      <div>
+        <span class="pill-tag" style="background:var(--navy);color:#fff;border:none;">DATO RANDOM</span>
+        <h4 style="font-weight:700;font-size:20px;margin-top:16px;">El redondeo automático te puede dar +300€ al año</h4>
+        <p style="font-size:14px;margin-top:8px;max-width:600px;">Activa el redondeo automático y cada compra suma un poquito a tu ahorro, sin que lo notes.</p>
+      </div>
+      <a href="beneficios.html#ganar" class="btn btn-primary">Probar redondeo</a>
+    </div>
+  </div>
+</section>
+
+<!-- DICCIONARIO -->
+<section class="section-cream section">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:30px;">Diccionario de Bivi</h2>
+    <div style="display:flex;gap:16px;margin-top:24px;flex-wrap:wrap;" data-stagger>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">TAE</p><p class="muted" style="font-size:14px;margin-top:6px;">Lo que de verdad te cuesta o te paga un producto en un año.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">Redondeo</p><p class="muted" style="font-size:14px;margin-top:6px;">Cada compra se redondea y la diferencia va directa a tu ahorro.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">TIN</p><p class="muted" style="font-size:14px;margin-top:6px;">El interés puro que te cobran, sin comisiones ni gastos extra.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">Interés compuesto</p><p class="muted" style="font-size:14px;margin-top:6px;">El interés que también gana intereses. Cuanto antes empiezas, más te beneficia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:30px;">Preguntas frecuentes</h2>
+    <div style="margin-top:16px;">
+      <div class="faq-item"><div class="faq-q"><span>¿Necesito ser cliente BBVA para hablar con Bivi?</span><span class="chevron">⌄</span></div><div class="faq-a">No, cualquiera puede preguntarle a Bivi, tengas cuenta o no.</div></div>
+      <div class="faq-item"><div class="faq-q"><span>¿Bivi me va a intentar vender algo?</span><span class="chevron">⌄</span></div><div class="faq-a">No, acá solo respondemos dudas. Si en algún momento un producto encaja, te lo decimos claro y sin letra pequeña.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="section-navy" style="padding:56px 0;">
+  <div class="wrap center reveal-scale">
+    <p style="font-weight:600;font-size:24px;">¿Listo para ponerlo en práctica?</p>
+    <a href="abrir-cuenta.html" class="btn btn-primary" style="margin-top:20px;">Abrir cuenta</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff;">BBVA</div>
+        <p>Descarga la app de BBVA y empieza a manejar tu dinero a tu manera.</p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <a href="descargar-app.html" class="btn btn-primary">Descargar app</a>
+          <div class="rating-line"><span class="stars">★★★★★</span><span><strong style="color:#fff">4.9</strong> App Store</span></div>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Secciones</h4><a href="index.html">Cómo funciona</a><a href="beneficios.html#canjes">Canjes</a><a href="beneficios.html">Ventajas BBVA</a><a href="beneficios.html">BBVA Split</a></div>
+        <div class="footer-col"><h4>Ayuda</h4><a href="#" onclick="document.querySelectorAll('.faq-item')[0]?.scrollIntoView({behavior:'smooth'});return false;">Preguntas frecuentes</a><span class="footer-static">Condiciones</span><span class="footer-static">Partners</span><span class="footer-static">Contacto</span></div>
+        <div class="footer-col"><h4>Redes</h4><span class="footer-static">Instagram</span><span class="footer-static">TikTok</span><span class="footer-static">Twitter</span><span class="footer-static">LinkedIn</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>BBVA © Copyright 2026</span>
+      <span>Crafted by MMAAS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/bivi.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('openBiviFromHero')?.addEventListener('click', ()=>{
+    document.querySelector('.bivi-widget')?.classList.add('open');
+  });
+  document.querySelectorAll('.chip-q').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelector('.bivi-widget')?.classList.add('open');
+      const body = document.getElementById('biviBody');
+      if (!body) return;
+      const div = document.createElement('div');
+      div.className = 'bivi-msg me';
+      div.textContent = btn.getAttribute('data-q');
+      body.appendChild(div);
+      const reply = document.createElement('div');
+      reply.className = 'bivi-msg bot';
+      reply.textContent = '•••';
+      body.appendChild(reply);
+      body.scrollTop = body.scrollHeight;
+      setTimeout(()=>{ reply.textContent = 'Buena pregunta — en la app real te la respondo con detalle. Por ahora esto es una demo de la interfaz.'; }, 700);
+    });
+  });
+</script>
+</body>
+</html>
