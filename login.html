@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acceso clientes — BBVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .login-card{ background:var(--cream); border-radius:var(--r-xl); padding:40px; display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:stretch; }
+  .login-form-col{ padding:24px; }
+  .login-field{ margin-bottom:22px; }
+  .login-field label{ display:block; font-size:13px; font-weight:600; margin-bottom:8px; }
+  .login-field input{
+    width:100%; padding:16px 18px; border-radius:14px; border:1px solid #e4e6ea; font-size:15px; outline:none;
+    transition:border-color .2s ease, box-shadow .2s ease;
+  }
+  .login-field input:focus{ border-color:var(--navy); box-shadow:0 0 0 4px rgba(41,72,139,.1); }
+  .login-field .show-toggle{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .login-field .show-toggle button{ background:none; border:none; color:var(--navy); font-weight:600; font-size:13px; white-space:nowrap; }
+  .login-options{ display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; font-size:14px; }
+  .login-options label{ display:flex; align-items:center; gap:8px; cursor:pointer; }
+  .login-brand-panel{ background:var(--navy); border-radius:var(--r-lg); padding:44px; color:#fff; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden; min-height:560px; }
+  .secure-chip{ display:inline-flex; align-items:center; gap:10px; background:#1e2027; border-radius:100px; padding:12px 18px; font-size:12px; font-weight:600; color:var(--footer-text); width:fit-content; }
+  .login-bivi-wrap{ display:flex; align-items:center; justify-content:center; margin-top:20px; }
+  .login-bivi-circle{ width:280px; height:280px; border-radius:50%; background:#243f82; display:flex; align-items:center; justify-content:center; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">BBVA</a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="planes.html">Planes</a>
+      <a href="bivi.html">Conoce a Bivi</a>
+    </div>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost">Acceso clientes</a>
+      <a href="abrir-cuenta.html" class="btn btn-primary">Abrir cuenta</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="login-card reveal-scale">
+      <div class="login-form-col">
+        <div class="eyebrow">ACCESO CLIENTES</div>
+        <h1 style="font-weight:800;font-size:40px;letter-spacing:-.02em;margin-top:14px;">Hola de nuevo</h1>
+        <p class="lead" style="margin-top:12px;">Entra a tu cuenta BBVA y sigue justo donde lo dejaste.</p>
+
+        <form id="loginForm" style="margin-top:36px;" novalidate>
+          <div class="login-field">
+            <label for="loginUser">Email o usuario</label>
+            <input type="text" id="loginUser" placeholder="tucorreo@email.com" required>
+          </div>
+          <div class="login-field">
+            <label for="loginPass">Contraseña</label>
+            <div class="show-toggle">
+              <input type="password" id="loginPass" placeholder="••••••••••" required style="flex:1;">
+            </div>
+            <button type="button" id="togglePass" style="background:none;border:none;color:var(--navy);font-weight:600;font-size:13px;margin-top:6px;">Mostrar</button>
+          </div>
+          <div class="login-options">
+            <label><input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--navy);"> Recordarme</label>
+            <a href="#" id="forgotPassBtn" class="link-underline" style="font-size:14px;">¿Olvidaste tu contraseña?</a>
+          </div>
+          <p id="loginError" style="display:none;color:var(--danger);font-size:13px;margin:-14px 0 16px;">Introduce tu email/usuario y contraseña para continuar.</p>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+          <button type="button" class="btn btn-outline btn-lg btn-block" style="margin-top:14px;" id="faceIdBtn">Entrar con Face ID</button>
+        </form>
+
+        <div style="border-top:1px solid #e4e6ea;margin:32px 0 24px;"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px;flex-wrap:wrap;gap:8px;">
+          <span class="muted">¿Aún no eres cliente BBVA?</span>
+          <a href="abrir-cuenta.html" class="link-underline" style="font-weight:700;">Crear cuenta →</a>
+        </div>
+      </div>
+
+      <div class="login-brand-panel">
+        <div>
+          <div class="eyebrow" style="color:var(--lime);">PARA LOS QUE YA SON DE BBVA</div>
+          <h2 style="font-weight:700;font-size:32px;letter-spacing:-.02em;margin-top:14px;line-height:1.15;">Tu dinero te estaba esperando</h2>
+          <p style="opacity:.7;margin-top:14px;line-height:1.5;">Entra y sigue sumando puntos, dividiendo gastos y controlándolo todo desde un sitio.</p>
+          <div class="secure-chip" style="margin-top:24px;">Conexión cifrada de extremo a extremo</div>
+        </div>
+        <div class="login-bivi-wrap" data-bivi-drift>
+          <div class="login-bivi-circle">
+            <div data-bivi data-bivi-size="190" class="bivi-float"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="center muted" style="font-size:13px;margin-top:24px;">BBVA © Copyright 2026 · Aviso legal · Política de privacidad · Seguridad online</p>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/bivi.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('togglePass').addEventListener('click', function(){
+    const pass = document.getElementById('loginPass');
+    const isPass = pass.type === 'password';
+    pass.type = isPass ? 'text' : 'password';
+    this.textContent = isPass ? 'Ocultar' : 'Mostrar';
+  });
+  document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const user = document.getElementById('loginUser');
+    const pass = document.getElementById('loginPass');
+    const error = document.getElementById('loginError');
+    if (!user.value.trim() || !pass.value.trim()){
+      error.style.display = 'block';
+      return;
+    }
+    error.style.display = 'none';
+    // Demo only — no real backend. In production this would authenticate the user.
+    alert('Esto es una demo de interfaz: aquí se iniciaría sesión de verdad en la app BBVA.');
+  });
+  document.getElementById('faceIdBtn').addEventListener('click', ()=>{
+    alert('Esto es una demo de interfaz: aquí se abriría el sensor de Face ID del dispositivo.');
+  });
+  document.getElementById('forgotPassBtn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    alert('Esto es una demo de interfaz: aquí te enviaríamos un enlace para restablecer tu contraseña.');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descarga la app — BBVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .store-btn{
+    display:flex; align-items:center; gap:12px; background:#111214; color:#fff; border-radius:14px; padding:12px 22px;
+    transition:transform .25s ease, background .25s ease;
+  }
+  .store-btn:hover{ transform:translateY(-3px); background:#000; }
+  .store-btn .glyph{ font-size:26px; }
+  .store-btn .txt{ text-align:left; line-height:1.2; }
+  .store-btn .txt small{ display:block; font-size:11px; opacity:.7; }
+  .store-btn .txt b{ font-size:17px; font-weight:700; }
+  .qr-box{ width:150px;height:150px;border-radius:20px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:64px; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">BBVA</a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="planes.html">Planes</a>
+      <a href="bivi.html">Conoce a Bivi</a>
+    </div>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost">Acceso clientes</a>
+      <a href="abrir-cuenta.html" class="btn btn-primary">Abrir cuenta</a>
+    </div>
+  </div>
+</nav>
+
+<header class="section">
+  <div class="wrap">
+    <div class="hero-card grid-2">
+      <div data-hero-in>
+        <div class="eyebrow">DESCARGA LA APP</div>
+        <p class="lead" style="margin-top:20px;max-width:460px;">Escanea el código o elige tu tienda. Disponible para iOS y Android, gratis, en menos de un minuto.</p>
+
+        <div style="display:flex;gap:16px;margin-top:32px;flex-wrap:wrap;">
+          <a href="#" class="store-btn" id="appStoreBtn">
+            <span class="txt"><small>Descárgala en el</small><b>App Store</b></span>
+          </a>
+          <a href="#" class="store-btn" id="playStoreBtn">
+            <span class="txt"><small>Disponible en</small><b>Google Play</b></span>
+          </a>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:16px; margin-top:32px;">
+          <div style="font-weight:800;font-size:20px;">4.8 ★</div>
+          <span class="muted" style="font-size:13px;">+120.000 valoraciones · App Store &amp; Google Play</span>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:center;gap:20px;" data-bivi-drift>
+        <div class="qr-box">▦</div>
+        <p class="muted center" style="font-size:13px;max-width:200px;">Escanea con la cámara de tu móvil para descargar la app de BBVA</p>
+        <div data-bivi data-bivi-size="90" class="bivi-float"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="grid-3" data-stagger>
+      <div class="card card-white center">
+        <h4 style="font-weight:700;font-size:18px;">Todo en un lugar</h4>
+        <p class="muted" style="margin-top:10px;font-size:14px;">Cuentas, tarjetas, ahorro e inversión sin salir de la app.</p>
+      </div>
+      <div class="card card-white center">
+        <h4 style="font-weight:700;font-size:18px;">Seguridad de verdad</h4>
+        <p class="muted" style="margin-top:10px;font-size:14px;">Bloqueo instantáneo y alertas en tiempo real ante cualquier movimiento.</p>
+      </div>
+      <div class="card card-white center">
+        <h4 style="font-weight:700;font-size:18px;">Bivi, siempre disponible</h4>
+        <p class="muted" style="margin-top:10px;font-size:14px;">Resuelve tus dudas de dinero al instante, cualquier día del año.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-navy section center">
+  <div class="wrap reveal-scale">
+    <h2 class="h-section text-white">¿Aún no tienes cuenta?</h2>
+    <p style="opacity:.75;margin-top:14px;">Ábrela desde la app en menos de 5 minutos, sin papeleo.</p>
+    <a href="abrir-cuenta.html" class="btn btn-primary btn-lg" style="margin-top:24px;">Abrir cuenta</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff;">BBVA</div>
+        <p>Descarga la app de BBVA y empieza a manejar tu dinero a tu manera.</p>
+        <div class="rating-line"><span class="stars">★★★★★</span><span><strong style="color:#fff">4.9</strong> App Store</span></div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Secciones</h4><a href="index.html">Inicio</a><a href="beneficios.html">Beneficios</a><a href="planes.html">Planes</a></div>
+        <div class="footer-col"><h4>Ayuda</h4><a href="beneficios.html">Preguntas frecuentes</a><span class="footer-static">Condiciones</span><span class="footer-static">Contacto</span></div>
+        <div class="footer-col"><h4>Redes</h4><a href="https://www.instagram.com/bivibbva?igsh=MWRnODc2anVzeWxsdA==" target="_blank" rel="noopener" class="footer-social" aria-label="Bivi en Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>BBVA © Copyright 2026</span>
+      <span>Crafted by MMAAS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/bivi.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('appStoreBtn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    alert('Esto es una demo de interfaz: aquí se abriría la ficha de BBVA en el App Store.');
+  });
+  document.getElementById('playStoreBtn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    alert('Esto es una demo de interfaz: aquí se abriría la ficha de BBVA en Google Play.');
+  });
+</script>
+</body>
+</html>
