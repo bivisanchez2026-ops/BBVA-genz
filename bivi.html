@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conoce a Bivi — BBVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .chip-q{ background:#fff; border:1px solid var(--border-warm); border-radius:100px; padding:14px 22px; font-weight:500; font-size:15px; color:var(--navy); transition:all .2s ease; }
+  .chip-q:hover{ background:var(--navy); color:#fff; transform:translateY(-2px); }
+  .topic-cat + .topic-cat{ margin-top:28px; }
+  .topic-cat h5{ font-weight:600; font-size:13px; letter-spacing:.04em; color:var(--body); text-transform:uppercase; margin-bottom:12px; }
+  .chips-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .term-card{ background:#fff; border-radius:16px; padding:20px; width:270px; flex-shrink:0; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="assets/logos/bbva-logo.png" alt="BBVA" class="logo-img"></a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="planes.html">Planes</a>
+      <a href="bivi.html">Conoce a Bivi</a>
+    </div>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost" aria-label="Acceso clientes"><svg class="btn-ghost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="btn-label">Acceso clientes</span></a>
+      <a href="abrir-cuenta.html" class="btn btn-primary">Abrir cuenta</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO CHAT -->
+<header class="section-cream" style="padding:56px 0;">
+  <div class="wrap center">
+    <div class="card-white" style="border-radius:24px; display:inline-flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px; padding:32px 40px 40px; text-align:left; max-width:760px;">
+      <div class="bivi-hero-circle" style="background:var(--lime); border-radius:50%; width:220px; height:220px; display:flex; align-items:center; justify-content:center; flex-shrink:0;" data-bivi-drift>
+        <div data-bivi data-bivi-size="170" class="bivi-float"></div>
+      </div>
+      <div style="padding-bottom:4px;">
+        <span class="pill-tag" style="background:var(--lime);border:none;color:#094a21;">● En línea</span>
+        <h1 style="font-weight:600;font-size:34px;margin-top:12px;">Hola, soy Bivi.</h1>
+        <p class="lead" style="margin-top:6px;margin-bottom:0;">Pregúntame lo que quieras sobre tu dinero.</p>
+      </div>
+    </div>
+    <div style="max-width:600px;margin:28px auto 0;">
+      <div class="card-white" style="border-radius:100px;border:1px solid var(--border-warm);padding:16px 28px;display:flex;align-items:center;gap:12px;" id="openBiviFromHero">
+        <span class="muted">Escribe tu pregunta…</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO PARA TI -->
+<section class="section-tight">
+  <div class="wrap">
+    <h2 class="h-section center reveal" style="font-size:30px;max-width:600px;margin:0 auto 32px;">Contenido para ti</h2>
+  </div>
+  <div class="video-feed" id="biviVideoFeed">
+    <div class="video-progress" id="biviVideoProgress">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+
+    <div class="video-slide" data-index="0" style="background:#111214;">
+      <span class="video-blob" style="width:280px;height:280px;top:-70px;left:-60px;background:#bfe366;"></span>
+      <span class="video-blob" style="width:320px;height:320px;bottom:-100px;right:-90px;background:#29488b;"></span>
+      <span class="video-blob" style="width:180px;height:180px;bottom:30%;left:20%;background:#4f6eff;opacity:.5;"></span>
+      <div class="video-thumb"><div class="video-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="video-overlay">
+        <div class="video-info">
+          <div class="eyebrow" style="color:var(--lime);">NUEVO</div>
+          <h4>Ahorro automático en 1 min</h4>
+          <p>Activa el redondeo y ahorra sin pensarlo.</p>
+        </div>
+        <div class="video-actions">
+          <button class="video-action like-btn" aria-label="Me gusta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            <span class="count">612</span>
+          </button>
+          <button class="video-action comment-btn" aria-label="Comentar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+            <span class="count">47</span>
+          </button>
+          <button class="video-action next-btn" aria-label="Siguiente vídeo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            <span>Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-slide" data-index="1" style="background:#0c0d10;">
+      <span class="video-blob" style="width:300px;height:300px;top:-80px;right:-70px;background:#4f6eff;"></span>
+      <span class="video-blob" style="width:260px;height:260px;bottom:-90px;left:-70px;background:#bfe366;opacity:.55;"></span>
+      <span class="video-blob" style="width:200px;height:200px;top:35%;right:20%;background:#29488b;"></span>
+      <div class="video-thumb"><div class="video-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="video-overlay">
+        <div class="video-info">
+          <div class="eyebrow" style="color:var(--lime);">TARJETAS</div>
+          <h4>Débito vs crédito</h4>
+          <p>La diferencia explicada en 60 segundos.</p>
+        </div>
+        <div class="video-actions">
+          <button class="video-action like-btn" aria-label="Me gusta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            <span class="count">389</span>
+          </button>
+          <button class="video-action comment-btn" aria-label="Comentar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+            <span class="count">29</span>
+          </button>
+          <button class="video-action next-btn" aria-label="Siguiente vídeo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            <span>Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-slide" data-index="2" style="background:#111214;">
+      <span class="video-blob" style="width:300px;height:300px;bottom:-90px;left:-80px;background:#4a231b;"></span>
+      <span class="video-blob" style="width:240px;height:240px;top:-60px;right:-60px;background:#bfe366;opacity:.4;"></span>
+      <span class="video-blob" style="width:180px;height:180px;top:30%;left:30%;background:#c8763f;opacity:.55;"></span>
+      <div class="video-thumb"><div class="video-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="video-overlay">
+        <div class="video-info">
+          <div class="eyebrow" style="color:var(--lime);">DEUDAS</div>
+          <h4>Salir de números rojos</h4>
+          <p>Pasos reales para reordenar tus cuentas.</p>
+        </div>
+        <div class="video-actions">
+          <button class="video-action like-btn" aria-label="Me gusta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            <span class="count">254</span>
+          </button>
+          <button class="video-action comment-btn" aria-label="Comentar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+            <span class="count">18</span>
+          </button>
+          <button class="video-action next-btn" aria-label="Siguiente vídeo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            <span>Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-slide" data-index="3" style="background:#17284d;">
+      <span class="video-blob" style="width:300px;height:300px;top:-80px;left:-70px;background:#bfe366;opacity:.5;"></span>
+      <span class="video-blob" style="width:320px;height:320px;bottom:-100px;right:-90px;background:#29488b;"></span>
+      <span class="video-blob" style="width:190px;height:190px;top:40%;right:25%;background:#4f6eff;opacity:.5;"></span>
+      <div class="video-thumb"><div class="video-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="video-overlay">
+        <div class="video-info">
+          <div class="eyebrow" style="color:var(--lime);">INVERSIÓN</div>
+          <h4>Invertir con poco dinero</h4>
+          <p>Empieza desde un euro, sin tecnicismos.</p>
+        </div>
+        <div class="video-actions">
+          <button class="video-action like-btn" aria-label="Me gusta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            <span class="count">471</span>
+          </button>
+          <button class="video-action comment-btn" aria-label="Comentar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+            <span class="count">33</span>
+          </button>
+          <button class="video-action next-btn" aria-label="Siguiente vídeo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            <span>Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS SUGERIDAS -->
+<section class="section-cream section">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:28px;">Preguntas sugeridas</h2>
+    <div style="margin-top:28px;" data-stagger>
+      <div class="topic-cat">
+        <h5>Ahorro</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo ahorro sin darme cuenta?">¿Cómo ahorro sin darme cuenta?</button>
+          <button class="chip-q" data-q="¿Cuánto debería ahorrar al mes?">¿Cuánto debería ahorrar al mes?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Tarjetas</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Débito o crédito, cuál uso?">¿Débito o crédito, cuál uso?</button>
+          <button class="chip-q" data-q="¿Qué es el CVV dinámico?">¿Qué es el CVV dinámico?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Deudas</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="Me pasé con la tarjeta, ¿qué hago?">Me pasé con la tarjeta, ¿qué hago?</button>
+          <button class="chip-q" data-q="¿Qué es el TAE?">¿Qué es el TAE?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Primer sueldo</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="Cobré mi primera nómina, ¿y ahora?">Cobré mi primera nómina, ¿y ahora?</button>
+          <button class="chip-q" data-q="¿Necesito un fondo de emergencia?">¿Necesito un fondo de emergencia?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Inversión</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo empiezo a invertir con poco dinero?">¿Cómo empiezo a invertir con poco dinero?</button>
+          <button class="chip-q" data-q="¿Es arriesgado invertir siendo joven?">¿Es arriesgado invertir siendo joven?</button>
+        </div>
+      </div>
+      <div class="topic-cat">
+        <h5>Presupuesto</h5>
+        <div class="chips-row">
+          <button class="chip-q" data-q="¿Cómo hago un presupuesto que sí cumpla?">¿Cómo hago un presupuesto que sí cumpla?</button>
+          <button class="chip-q" data-q="¿En qué se me va el dinero cada mes?">¿En qué se me va el dinero cada mes?</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:14px;margin-top:36px;align-items:flex-start;" class="reveal">
+      <div data-bivi data-bivi-size="40"></div>
+      <div class="card" style="border-top-left-radius:4px;max-width:600px;">
+        Prueba el redondeo automático: cada compra se redondea y la diferencia pasa sola a tu ahorro. No lo notas y al mes tienes un colchón.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIP -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="card card-lime reveal-scale" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+      <div>
+        <span class="pill-tag" style="background:var(--navy);color:#fff;border:none;">DATO RANDOM</span>
+        <h4 style="font-weight:700;font-size:20px;margin-top:16px;">El redondeo automático te puede dar +300€ al año</h4>
+        <p style="font-size:14px;margin-top:8px;max-width:600px;">Activa el redondeo automático y cada compra suma un poquito a tu ahorro, sin que lo notes.</p>
+      </div>
+      <a href="beneficios.html#ganar" class="btn btn-primary">Probar redondeo</a>
+    </div>
+  </div>
+</section>
+
+<!-- DICCIONARIO -->
+<section class="section-cream section">
+  <div class="wrap">
+    <h2 class="h-section reveal" style="font-size:30px;">Diccionario de Bivi</h2>
+    <div style="display:flex;gap:16px;margin-top:24px;flex-wrap:wrap;" data-stagger>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">TAE</p><p class="muted" style="font-size:14px;margin-top:6px;">Lo que de verdad te cuesta o te paga un producto en un año.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">Redondeo</p><p class="muted" style="font-size:14px;margin-top:6px;">Cada compra se redondea y la diferencia va directa a tu ahorro.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">TIN</p><p class="muted" style="font-size:14px;margin-top:6px;">El interés puro que te cobran, sin comisiones ni gastos extra.</p></div>
+      <div class="term-card"><p style="color:var(--navy);font-weight:600;">Interés compuesto</p><p class="muted" style="font-size:14px;margin-top:6px;">El interés que también gana intereses. Cuanto antes empiezas, más te beneficia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-navy section">
+  <div class="wrap">
+    <h2 class="h-section reveal text-white" style="font-size:30px;">Preguntas frecuentes</h2>
+    <div style="margin-top:16px;">
+      <div class="faq-item"><div class="faq-q"><span>¿Necesito ser cliente BBVA para hablar con Bivi?</span><span class="chevron">⌄</span></div><div class="faq-a">No, cualquiera puede preguntarle a Bivi, tengas cuenta o no.</div></div>
+      <div class="faq-item"><div class="faq-q"><span>¿Bivi me va a intentar vender algo?</span><span class="chevron">⌄</span></div><div class="faq-a">No, acá solo respondemos dudas. Si en algún momento un producto encaja, te lo decimos claro y sin letra pequeña.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="section-navy" style="padding:56px 0;">
+  <div class="wrap center reveal-scale">
+    <p style="font-weight:600;font-size:24px;">¿Listo para ponerlo en práctica?</p>
+    <a href="abrir-cuenta.html" class="btn btn-primary" style="margin-top:20px;">Abrir cuenta</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logos/bbva-logo-white.png" alt="BBVA" class="logo-img"></div>
+        <p>Descarga la app de BBVA y empieza a manejar tu dinero a tu manera.</p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <a href="descargar-app.html" class="btn btn-primary">Descargar app</a>
+          <div class="rating-line"><span class="stars">★★★★★</span><span><strong style="color:#fff">4.9</strong> App Store</span></div>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Secciones</h4><a href="index.html">Cómo funciona</a><a href="beneficios.html#canjes">Canjes</a><a href="beneficios.html">Ventajas BBVA</a><a href="beneficios.html">BBVA Split</a></div>
+        <div class="footer-col"><h4>Ayuda</h4><a href="#" onclick="document.querySelectorAll('.faq-item')[0]?.scrollIntoView({behavior:'smooth'});return false;">Preguntas frecuentes</a><span class="footer-static">Condiciones</span><span class="footer-static">Partners</span><span class="footer-static">Contacto</span></div>
+        <div class="footer-col"><h4>Redes</h4><a href="https://www.instagram.com/bivibbva?igsh=MWRnODc2anVzeWxsdA==" target="_blank" rel="noopener" class="footer-social" aria-label="Bivi en Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>BBVA © Copyright 2026</span>
+      <span>Crafted by MMAAS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/bivi.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('openBiviFromHero')?.addEventListener('click', ()=>{
+    document.querySelector('.bivi-widget')?.classList.add('open');
+  });
+  document.querySelectorAll('.chip-q').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelector('.bivi-widget')?.classList.add('open');
+      const body = document.getElementById('biviBody');
+      if (!body) return;
+      const div = document.createElement('div');
+      div.className = 'bivi-msg me';
+      div.textContent = btn.getAttribute('data-q');
+      body.appendChild(div);
+      const reply = document.createElement('div');
+      reply.className = 'bivi-msg bot';
+      reply.textContent = '•••';
+      body.appendChild(reply);
+      body.scrollTop = body.scrollHeight;
+      setTimeout(()=>{ reply.textContent = 'Buena pregunta — en la app real te la respondo con detalle. Por ahora esto es una demo de la interfaz.'; }, 700);
+    });
+  });
+</script>
+<script>
+  // Video feed estilo TikTok: autoplay del vídeo visible, puntos de progreso, like y siguiente
+  (function(){
+    const feed = document.getElementById('biviVideoFeed');
+    if (!feed) return;
+    const slides = Array.from(feed.querySelectorAll('.video-slide'));
+    const dots = Array.from(document.querySelectorAll('#biviVideoProgress .dot'));
+
+    const setActiveDot = (index) => {
+      dots.forEach(d => d.classList.remove('active'));
+      dots[index]?.classList.add('active');
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          setActiveDot(slides.indexOf(entry.target));
+        }
+      });
+    }, { root: feed, threshold: [0, 0.6, 1] });
+
+    slides.forEach(s => io.observe(s));
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        slides[+dot.dataset.index]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    feed.querySelectorAll('.next-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const idx = slides.indexOf(btn.closest('.video-slide'));
+        slides[(idx + 1) % slides.length].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    feed.querySelectorAll('.like-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const liked = btn.classList.toggle('liked');
+        const countEl = btn.querySelector('.count');
+        const n = parseInt(countEl.textContent, 10);
+        countEl.textContent = liked ? n + 1 : n - 1;
+      });
+    });
+  })();
+</script>
+</body>
+</html>
